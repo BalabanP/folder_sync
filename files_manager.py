@@ -85,3 +85,4 @@ if __name__ == "__main__":
         file_manager.sinchronize()
     except Exception as e:
         logging.error(f"There is an error on script:{__name__}:{e}")
+        raise Exception(f"There is an error on script:{__name__}:{e}")
